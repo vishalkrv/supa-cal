@@ -1,6 +1,6 @@
-import Header from "@/components/Header"
+// import Header from "@/components/Header"
 import LeftSidebar from "@/components/LeftSidebar"
-import RightSidebar from "@/components/RightSideBar"
+// import RightSidebar from "@/components/RightSideBar"
 
 export default function DashboardLayout ({ children }) {
   return (

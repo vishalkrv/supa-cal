@@ -7,7 +7,7 @@ import Link from 'next/link'
 import Squares2X2Icon from '@heroicons/react/24/outline/Squares2X2Icon'
 
 const LeftSidebar = () => {
-  const close = (e) => {
+  const close = () => {
     document.getElementById('left-sidebar-drawer').click()
   }
   return (
