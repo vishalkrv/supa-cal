@@ -1,5 +1,6 @@
 'use client';
-import { useTheme } from 'next-themes'
+import { useTheme } from 'next-themes';
+import Link from 'next/link';
 
 export default function Home () {
   const { theme, setTheme } = useTheme()
@@ -51,6 +52,17 @@ export default function Home () {
                   <a>{ t }</a>
                 </li>
               )) }
+            </ul>
+          </div>
+          <div className='mt-4'>
+            <span>Working on Routes</span>
+            <ul>
+              <li><Link href="/auth/login" className='transition underline'>Login</Link></li>
+              <li><Link href="/auth/register" className='transition underline'>Register</Link></li>
+              <li><Link href="/auth/forgot" className='transition underline'>Forgot</Link></li>
+              <li><Link href="/test/2" className='transition underline'>404</Link></li>
+              <li><Link href="/" className='transition underline'>Dashboard</Link></li>
+              <li><Link href="/posts" className='transition underline'>Posts</Link></li>
             </ul>
           </div>
         </div>
