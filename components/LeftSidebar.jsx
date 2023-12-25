@@ -1,6 +1,6 @@
 'use client'
 
-import Image from 'next/image'
+// import Image from 'next/image'
 import XMarkIcon from '@heroicons/react/24/outline/XMarkIcon'
 import siteMetadata from '@/data/siteMetadata'
 import Link from 'next/link'

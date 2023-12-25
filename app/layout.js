@@ -2,9 +2,9 @@ import { Nunito } from 'next/font/google'
 import './globals.css'
 import { ThemeProviders } from './theme-providers'
 import siteMetadata from '@/data/siteMetadata'
-import Header from '@/components/Header'
-import LeftSidebar from '@/components/LeftSidebar'
-import RightSidebar from '@/components/RightSideBar'
+// import Header from '@/components/Header'
+// import LeftSidebar from '@/components/LeftSidebar'
+// import RightSidebar from '@/components/RightSideBar'
 
 const nunito = Nunito({ subsets: ['latin'] })
 

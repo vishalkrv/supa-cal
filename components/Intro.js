@@ -1,5 +1,5 @@
 import siteMetadata from "@/data/siteMetadata";
-import Image from "next/image";
+// import Image from "next/image";
 import Features from "./Features";
 
 export default function Intro () {

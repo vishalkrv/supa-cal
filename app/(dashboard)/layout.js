@@ -21,6 +21,7 @@ export default function DashboardLayout ({ children }) {
     <div className="drawer lg:drawer-open">
       <input id="left-sidebar-drawer" type="checkbox" className="drawer-toggle" />
       <LeftSidebar></LeftSidebar>
+      {children}
     </div>
   )
 }
