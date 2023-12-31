@@ -44,9 +44,9 @@ export default function Home () {
         <div className="max-w-md">
           <h1 className="text-5xl font-bold">Hello there...</h1>
           <p className="py-6">Youre here. A deva just as dashing and daisyuing - as yourself refined</p>
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-primary m-1">Selected Theme - { theme }</div>
-            <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+          <div className="dropdown">
+            <div tabindex="0" role="button" className="btn btn-primary m-1">Selected Theme - { theme }</div>
+            <ul tabindex="0" className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
               { themes.map((t) => (
                 <li key={ t } onClick={ () => setTheme(t) }>
                   <a>{ t }</a>

@@ -49,7 +49,7 @@ export default function ForgotPassword () {
 
                   </div>
 
-                  <ErrorText styleClass="mt-12">{ 'Invalid Credentials' }</ErrorText>
+                  <ErrorText styleclassName="mt-12">{ 'Invalid Credentials' }</ErrorText>
                   <button type="submit" className={ "btn mt-2 w-full btn-primary"}>Send Reset Link</button>
 
                   <div className='text-center mt-4'>Dont have an account yet? <Link href="/auth/register"><button className="  inline-block  hover:text-primary hover:underline hover:cursor-pointer transition duration-200">Register</button></Link></div>

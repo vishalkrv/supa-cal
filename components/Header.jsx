@@ -43,7 +43,7 @@ also includes corporate and retro themes in tailwind.config file */}
           data-choose-theme
           onChange={(e) => setTheme(e.target.value)}
         >
-          <option disabled selected>
+          <option disabled defaultValue>
             Theme
           </option>
           <option value="light">Default</option>
@@ -57,12 +57,12 @@ also includes corporate and retro themes in tailwind.config file */}
           <input type="checkbox" />
           <SunIcon
             data-set-theme="light"
-            data-act-class="ACTIVECLASS"
+            data-act-className="ACTIVECLASS"
             className={"fill-current w-6 h-6 "+(theme === "dark" ? "swap-on" : "swap-off")}
           />
           <MoonIcon
             data-set-theme="dark"
-            data-act-class="ACTIVECLASS"
+            data-act-className="ACTIVECLASS"
             className={"fill-current w-6 h-6 "+(theme !== "dark" ? "swap-on" : "swap-off")}
           />
         </label> */}

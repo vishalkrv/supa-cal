@@ -35,7 +35,7 @@ export default function Register () {
 
 
 
-              <ErrorText styleClass="mt-8">{ 'Invalid Data' }</ErrorText>
+              <ErrorText styleclassName="mt-8">{ 'Invalid Data' }</ErrorText>
               <button type="submit" className={ "btn mt-2 w-full btn-primary"}>Register</button>
 
               <div className='text-center mt-4'>Already have an account? <Link href="/auth/login"><span className="  inline-block  hover:text-primary hover:underline hover:cursor-pointer transition duration-200">Login</span></Link></div>

@@ -34,7 +34,7 @@ export default function LoginPage () {
                                     <span className="text-sm inline-block hover:text-primary hover:underline hover:cursor-pointer transition duration-200"> Forgot Password?</span>
                                 </Link>
                             </div>
-                            <ErrorText styleClass={ 'mt-8' }>
+                            <ErrorText styleclassName={ 'mt-8' }>
                                 Incorrect Credentials
                             </ErrorText>
                             <button type="submit" className="btn mt-2 w-full btn-primary">Login</button>

@@ -235,7 +235,7 @@ export default function Posts () {
   const scrollToTime = defaultDate.setHours(defaultDate.getHours(), 0, 0);
 
   return (
-    <div class="card w-full p-6 bg-base-100 shadow-xl mt-2">
+    <div className="card w-full p-6 bg-base-100 shadow-xl mt-2">
       <div className="text-xl font-semibold inline-block">
         My Notes
       </div>
