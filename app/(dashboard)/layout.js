@@ -1,10 +1,5 @@
 // import Header from "@/components/Header"
 import LeftSidebar from "@/components/LeftSidebar"
-import BellIcon from '@heroicons/react/24/outline/BellIcon'
-import Bars3Icon from '@heroicons/react/24/outline/Bars3Icon'
-import MoonIcon from '@heroicons/react/24/outline/MoonIcon'
-import SunIcon from '@heroicons/react/24/outline/SunIcon'
-import Link from "next/link"
 import NotificationSideBar from "@/components/NotificationSideBar"
 import Header from "@/components/Header"
 // import RightSidebar from "@/components/RightSideBar"
