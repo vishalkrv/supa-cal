@@ -1,5 +1,12 @@
 // import Header from "@/components/Header"
 import LeftSidebar from "@/components/LeftSidebar"
+import BellIcon from '@heroicons/react/24/outline/BellIcon'
+import Bars3Icon from '@heroicons/react/24/outline/Bars3Icon'
+import MoonIcon from '@heroicons/react/24/outline/MoonIcon'
+import SunIcon from '@heroicons/react/24/outline/SunIcon'
+import Link from "next/link"
+import NotificationSideBar from "@/components/NotificationSideBar"
+import Header from "@/components/Header"
 // import RightSidebar from "@/components/RightSideBar"
 
 export default function DashboardLayout ({ children }) {
@@ -18,10 +25,29 @@ export default function DashboardLayout ({ children }) {
     //   {/* RIGHT SIDEBAR */ }
     //   <RightSidebar></RightSidebar>
     // </div>
-    <div className="drawer lg:drawer-open">
-      <input id="left-sidebar-drawer" type="checkbox" className="drawer-toggle" />
-      <LeftSidebar></LeftSidebar>
-      {children}
-    </div>
+    <>
+      <div className="drawer lg:drawer-open">
+        <input id="left-sidebar-drawer" type="checkbox" className="drawer-toggle" />
+        <div className="drawer-content flex flex-col ">
+          {/* HEADER */ }
+          <Header></Header>
+
+          <main className="flex-1 overflow-y-auto md:pt-4 pt-4 px-6  bg-base-200">
+            {/* <Suspense fallback={
+            <div className="w-full h-screen text-gray-300 dark:text-gray-200 bg-base-100">
+              Loading...
+            </div>
+          }> */}
+            { children }
+            {/* </Suspense> */ }
+            <div className="h-16"></div>
+          </main>
+        </div>
+        <LeftSidebar></LeftSidebar>
+      </div>
+
+      <NotificationSideBar></NotificationSideBar>
+
+    </>
   )
 }
