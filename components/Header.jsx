@@ -80,7 +80,7 @@ also includes corporate and retro themes in tailwind.config file */}
         <div className="dropdown dropdown-end ml-4">
           <label tabIndex={0} className="avatar btn btn-circle btn-ghost">
             <div className="w-10 rounded-full">
-              <img src="https://placeimg.com/80/80/people" alt="profile" />
+              <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" alt="profile" />
             </div>
           </label>
           <ul

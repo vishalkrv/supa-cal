@@ -1,28 +1,7 @@
-'use client';
+import DayCalendar from "./calendar"
 
-import { Calendar, dateFnsLocalizer } from 'react-big-calendar'
-import 'react-big-calendar/lib/css/react-big-calendar.css';
-import format from 'date-fns/format'
-import parse from 'date-fns/parse'
-import startOfWeek from 'date-fns/startOfWeek'
-import getDay from 'date-fns/getDay'
-import enUS from 'date-fns/locale/en-US'
-import { useMemo } from 'react';
-
-const locales = {
-  'en-US': enUS,
-}
-
-const localizer = dateFnsLocalizer({
-  format,
-  parse,
-  startOfWeek,
-  getDay,
-  locales,
-})
 
 const now = new Date()
-
 const events = [
   {
     id: 0,
@@ -228,35 +207,31 @@ const events = [
 
 export default function Posts () {
 
-  const { defaultDate } = useMemo(() => ({
-    defaultDate: new Date()
-  }), [])
-
-  const scrollToTime = defaultDate.setHours(defaultDate.getHours(), 0, 0);
 
   return (
     <div className="card w-full p-6 bg-base-100 shadow-xl mt-2">
       <div className="text-xl font-semibold inline-block">
-        My Notes
       </div>
       <div className="divider mt-2">
       </div>
       <div className="h-full w-full flex justify-between pb-6 bg-base-100">
-        <div>
-          Posts
+        <div className="flex flex-col w-full p-3">
+          <div className="rounded-lg shadow p-4">
+            <form>
+              <textarea className="form-textarea w-full" placeholder="How's the day ?"></textarea>
+              <div className="flex flex-col">
+
+                <button type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+          <div>
+            Posts
+          </div>
         </div>
         <div>
-          <Calendar
-            localizer={ localizer }
-            defaultDate={ defaultDate }
-            defaultView='day'
-            views={ ['day'] }
-            events={ events }
-            startAccessor="start"
-            endAccessor="end"
-            scrollToTime={ scrollToTime }
-            style={ { height: 500 } }
-          />
+          <DayCalendar events={ events }>
+          </DayCalendar>
         </div>
       </div>
     </div>
