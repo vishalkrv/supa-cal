@@ -12,12 +12,21 @@
   "dependencies": {
     "@heroicons/react": "^2.1.1",
     "@tailwindcss/typography": "^0.5.10",
+    "@tiptap/extension-highlight": "^2.1.13",
+    "@tiptap/extension-list-item": "^2.1.13",
+    "@tiptap/extension-task-item": "^2.1.13",
+    "@tiptap/extension-task-list": "^2.1.13",
+    "@tiptap/extension-text-style": "^2.1.13",
+    "@tiptap/pm": "^2.1.13",
+    "@tiptap/react": "^2.1.13",
+    "@tiptap/starter-kit": "^2.1.13",
     "date-fns": "^3.0.6",
     "next": "14.0.4",
     "next-themes": "^0.2.1",
     "react": "^18",
     "react-big-calendar": "^1.8.5",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "remixicon": "^4.0.1"
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",

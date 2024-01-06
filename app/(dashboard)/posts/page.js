@@ -1,3 +1,4 @@
+import Tiptap from "@/components/TipTap"
 import DayCalendar from "./calendar"
 
 
@@ -209,30 +210,12 @@ export default function Posts () {
 
 
   return (
-    <div className="card w-full p-6 bg-base-100 shadow-xl mt-2">
-      <div className="text-xl font-semibold inline-block">
-      </div>
-      <div className="divider mt-2">
-      </div>
-      <div className="h-full w-full flex justify-between pb-6 bg-base-100">
-        <div className="flex flex-col w-full p-3">
-          <div className="rounded-lg shadow p-4">
-            <form>
-              <textarea className="form-textarea w-full" placeholder="How's the day ?"></textarea>
-              <div className="flex flex-col">
+    <div className="card w-full bg-base-100 shadow-xl mt-2 h-full">
+      <div className="h-full w-full flex justify-between">
+        <Tiptap
+          sidebar={ <DayCalendar events={ events }>
+          </DayCalendar> }></Tiptap>
 
-                <button type="submit">Submit</button>
-              </div>
-            </form>
-          </div>
-          <div>
-            Posts
-          </div>
-        </div>
-        <div>
-          <DayCalendar events={ events }>
-          </DayCalendar>
-        </div>
       </div>
     </div>
   )
