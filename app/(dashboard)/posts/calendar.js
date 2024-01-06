@@ -21,7 +21,7 @@ const localizer = dateFnsLocalizer({
   locales,
 })
 
-const now = new Date()
+// const now = new Date()
 
 export default function DayCalendar ({ events }) {
   const { defaultDate } = useMemo(() => ({
