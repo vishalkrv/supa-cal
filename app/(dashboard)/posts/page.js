@@ -211,11 +211,13 @@ export default function Posts () {
 
   return (
     <div className="card w-full bg-base-100 shadow-xl mt-2 h-full">
-      <div className="h-full w-full flex justify-between">
-        <Tiptap
-          sidebar={ <DayCalendar events={ events }>
-          </DayCalendar> }></Tiptap>
 
+      <div className="h-full w-full flex flex-row">
+        <Tiptap></Tiptap>
+        <div className="bg-red-200">
+          <DayCalendar events={ events }>
+          </DayCalendar>
+        </div>
       </div>
     </div>
   )

@@ -97,7 +97,7 @@
 .editor__content {
   flex: 1 1 auto;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: scroll;
   padding: 1.25rem 1rem;
   -webkit-overflow-scrolling: touch;
 }

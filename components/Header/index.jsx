@@ -1,20 +1,21 @@
-'use client'
+// 'use client'
 
-import { usePathname } from 'next/navigation'
-import { useTheme } from 'next-themes'
+// import { usePathname } from 'next/navigation'
+// import { useTheme } from 'next-themes'
 import siteMetadata from '@/data/siteMetadata'
 import BellIcon from '@heroicons/react/24/outline/BellIcon'
 import Bars3Icon from '@heroicons/react/24/outline/Bars3Icon'
 // import MoonIcon from '@heroicons/react/24/outline/MoonIcon'
 // import SunIcon from '@heroicons/react/24/outline/SunIcon'
 import Link from 'next/link'
+import { signOut } from '@/auth'
 
 const Header = () => {
-  const pathname = usePathname()
+  // const pathname = usePathname()
   // eslint-disable-next-line no-unused-vars
-  const { theme, setTheme } = useTheme()
+  // const { theme, setTheme } = useTheme()
 
-  console.log(pathname)
+  // console.log(pathname)
 
   //   <ul className="rounded-t-none bg-base-100 p-2">
   //   {themes.map((t) => (
@@ -38,7 +39,7 @@ const Header = () => {
         {/* Multiple theme selection, uncomment this if you want to enable multiple themes selection,
 also includes corporate and retro themes in tailwind.config file */}
 
-        <select
+        {/* <select
           className="select select-sm"
           data-choose-theme
           onChange={(e) => setTheme(e.target.value)}
@@ -50,7 +51,7 @@ also includes corporate and retro themes in tailwind.config file */}
           <option value="dark">Dark</option>
           <option value="corporate">Corporate</option>
           <option value="retro">Retro</option>
-        </select>
+        </select> */}
 
         {/* Light and dark theme selection toogle **/}
         {/* <label className="swap ">
@@ -80,7 +81,10 @@ also includes corporate and retro themes in tailwind.config file */}
         <div className="dropdown dropdown-end ml-4">
           <label tabIndex={0} className="avatar btn btn-circle btn-ghost">
             <div className="w-10 rounded-full">
-              <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" alt="profile" />
+              <img
+                src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                alt="profile"
+              />
             </div>
           </label>
           <ul
@@ -98,7 +102,14 @@ also includes corporate and retro themes in tailwind.config file */}
             </li>
             <div className="divider mb-0 mt-0"></div>
             <li>
-              <a>Logout</a>
+              <form
+                action={async () => {
+                  'use server'
+                  await signOut()
+                }}
+              >
+                <button>Logout</button>
+              </form>
             </li>
           </ul>
         </div>

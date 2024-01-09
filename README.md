@@ -55,6 +55,16 @@ The application should now be running on [http://localhost:3000](http://localhos
 
 Please read [CONTRIBUTING.md](link-to-contributing-file) for details on our code of conduct, and the process for submitting pull requests to us.
 
-## License
+## TODO
+Program Screen
+   - Provide a schedule
+   - Duration
+   - fixed time / flexible time
+   - Create a Program / Day of the week /
+   - Allow the program to be subscribed
 
-This is project is for private use - see [LICENSE.md]
+
+   - Full Page Monthly Calendar (View : https://miro.medium.com/v2/resize:fit:1400/format:webp/1*X1pDzNf9dL8FJ1BZm7tmwg.png)
+   - Notes Planner  (Free movement of canvas elements, editor component, drawing component, picture and file upload component) - https://web.getmicropad.com/#! (https://github.com/MicroPad/MicroPad-Core/tree/b5fe4bc68d708ec5fcd91f3e469c6a5d6438b892/app/src/app/components/note-viewer)
+   - Program Listing and subscribe page
+   - if subsbscribe, genreate events in the calendar

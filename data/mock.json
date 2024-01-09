@@ -1,0 +1,68 @@
+{
+  "users": [
+    {
+      "createdAt": "2024-01-08T11:12:43.749Z",
+      "name": "Dr. Oscar Heathcote",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/324.jpg",
+      "password": "female",
+      "emailId": "Sonny76@hotmail.com",
+      "id": "1"
+    },
+    {
+      "createdAt": "2024-01-08T16:00:29.419Z",
+      "name": "Kelly O'Reilly",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/265.jpg",
+      "password": "Electronic",
+      "emailId": "Arno.Bogan59@hotmail.com",
+      "id": "2"
+    },
+    {
+      "createdAt": "2024-01-08T14:03:46.487Z",
+      "name": "Angel Cassin",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/210.jpg",
+      "password": "Road",
+      "emailId": "Osvaldo.Metz8@hotmail.com",
+      "id": "3"
+    },
+    {
+      "createdAt": "2024-01-08T15:56:53.629Z",
+      "name": "Marilyn Mante",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1092.jpg",
+      "password": "South",
+      "emailId": "Christa_Schuppe@hotmail.com",
+      "id": "4"
+    },
+    {
+      "createdAt": "2024-01-09T02:57:19.629Z",
+      "name": "Edgar Mayer",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1212.jpg",
+      "password": "Poland",
+      "emailId": "Maryse.Blick@hotmail.com",
+      "id": "5"
+    },
+    {
+      "createdAt": "2024-01-09T04:45:39.129Z",
+      "name": "Ernesto Jones",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/993.jpg",
+      "password": "Albania",
+      "emailId": "Ella6@gmail.com",
+      "id": "6"
+    },
+    {
+      "createdAt": "2024-01-08T23:12:13.171Z",
+      "name": "Doris Veum",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/677.jpg",
+      "password": "Plastic",
+      "emailId": "Beulah_Lind@gmail.com",
+      "id": "7"
+    },
+    {
+      "createdAt": "2024-01-08T14:07:54.947Z",
+      "name": "Valerie Lynch",
+      "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/105.jpg",
+      "password": "Metrics",
+      "emailId": "Johan.Runolfsdottir@hotmail.com",
+      "id": "8"
+    }
+  ]
+}

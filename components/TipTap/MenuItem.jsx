@@ -11,7 +11,7 @@ export default function MenuItem({ icon, title, action, isActive = null }) {
       onClick={action}
       title={title}
     >
-      <i class={`ri-${icon}`}></i>
+      <i className={`ri-${icon}`}></i>
       {/* <svg className="remix">
         <use xlinkHref={`${remixiconUrl}#ri-${icon}`} />
       </svg> */}
